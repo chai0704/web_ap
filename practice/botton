@@ -13,7 +13,8 @@
  go to google
  </button>
 
- <button id="btnB" onclick="var();">
+ <div class="PRT" id="PRT_B">
+ <button id="btnB" onclick="va();">
     var
  </button>
 
@@ -26,7 +27,7 @@
  location.href = 'http://www.google.co.jp/';
  }
 
- function var(){
+ function va() {
      document.write("vvvvvvv");
  }
  </script>
