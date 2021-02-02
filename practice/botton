@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <title>ドキュメントタイトル</title>
+</head>
+<body>
+ <div class="PRT" id="PRT_A">
+ <p class="CLD">イベントの学習</p>
+ </div>
+ <div class="PRT" id="PRT_B">
+ <button id="btnA" onclick="foo();">
+ go to google
+ </button>
+
+ <button id="btnB" onclick="var();">
+    var
+ </button>
+
+
+ </div>
+
+ <script>
+ function foo() {
+ //document.write('ボタンが押された');
+ location.href = 'http://www.google.co.jp/';
+ }
+
+ function var(){
+     document.write("vvvvvvv");
+ }
+ </script>
+
+
+</body>
+</html>
