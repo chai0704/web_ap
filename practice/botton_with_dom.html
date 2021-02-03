@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <title>ドキュメントタイトル</title>
+</head>
+<body>
+ <div class="PRT" id="PRT_A">
+ <p class="CLD" id='KOKO'>イベントの学習</p>
+ </div>
+ <div class="PRT" id="PRT_B">
+ <button id="btnA" onclick="foo()">
+ 関数foo()を呼び出します
+ </button>
+ </div>
+ <script>
+ function foo() {
+ // 操作するノードを特定してオブジェクトとする
+ var dom = document.getElementById('KOKO');
+ alert(dom.innerHTML);
+ dom.innerHTML =' 書き換えた！';
+ }
+ </script>
+</body>
+</html>
