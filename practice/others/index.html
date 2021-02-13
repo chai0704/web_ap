@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <title>ドキュメントタイトル</title>
+</head>
+<body>
+ <div class="PRT" id="PRT_A">
+ <p class="CLD">ここにテキスト</p>
+ </div>
+ <script>
+ //このドキュメントの文字コード
+ document.write(document.characterSet);
+
+ document.write('<br>')
+ document.write(location.href);
+
+
+ // fooという名前のオブジェクトを作る
+var foo = new Object();
+// プロパティをセット
+foo.sei = ' 田中';
+foo.mei = ' 一郎';
+foo.age = 26;
+
+
+// メソッドをセット
+foo.output = function(A) { // 引数はargA
+ document.write(A); // 引数をalert
+ console.log(A); // 引数をconsole.log
+};
+// 作ったメソッドを呼び出す
+document.write('<br>')
+foo.output('こんにちは------------------------');
+
+
+var foo = new Object();
+// 値をセット
+foo = {"apple":"リンゴ","tomato":"トマト","nine":9};
+document.write(foo['apple']);
+document.write(foo.nine);
+document.write(foo.apple,'<br>');
+var foo = new Array();
+foo = [' 安藤',' 加藤',' 佐藤'];
+for( i in foo){
+    document.write(foo[i],'<br>')
+}
+
+ //location.href = 'http://www.google.co.jp/';
+ </script>
+ <div class="PRT" id="PRT_B">
+ <p class="CLD"></p>
+ </div>
+</body>
+</html>

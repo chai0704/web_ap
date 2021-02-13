@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8" />
- <title>ドキュメントタイトル</title>
- <script src="form_practice.js"></script>
+  <meta charset="utf-8" />
+  <title>ドキュメントタイトル</title>
+  <script src="form_practice.js"></script>
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
- <div class="PRT" id="PRT_A">
- <p class="CLD">フォームの扱い</p>
- </div>
- <div class="PRT" id="PRT_B">
- <form name="frmA" id="frmA" action="aaa.php" method="POST">
- <div style="height:150px">
- <img src="shirt0.jpg" id="itemPhoto" height="100">
- </div>
+
+  <div class = "header">
+    <div class = "header-logo">サイトタイトル（仮）</div>
+    <div class = "header list">
+      <ul>
+        <li>未定</li>
+        <li>（仮）</li>
+        <li>お問い合わせ</li>
+      </ul>   
+  </div>
+
+
+  <div class="PRT" id="PRT_A">
+   <p class="CLD"></p>
+  </div>
+
+  <div class="PRT" id="PRT_B">
+   <form name="frmA" id="frmA" action="aaa.php" method="POST">
+  <div style="height:150px">
+   <img src="shirt0.jpg" id="itemPhoto" height="100">
+  </div>
+
  <br><br> 色
- <select name="selA" id="selA">
- <option value=" 白" selected> 白</option>
- <option value=" 赤"> 赤</option>
- <option value=" 黒"> 黒</option>
+
+  <select name="selA" id="selA">
+   <option value=" 白" selected> 白</option>
+   <option value=" 赤"> 赤</option>
+  <option value=" 黒"> 黒</option>
  </select>
+
  <br><br> 数量:
- <input type="text" name="tboxA" id="tboxA" size="3" value="0">
- <br><br> サイズ:
- <input type="radio" name="size" class="rdSize" value="S">S
- <input type="radio" name="size" class="rdSize" value="M" checked>M
- <input type="radio" name="size" class="rdSize" value="L">L
- <input type="hidden" name="singlePrice" id="singlePrice" value="800">
+
+  <input type="text" name="tboxA" id="tboxA" size="3" value="0">
+   <br><br> サイズ:
+   <input type="radio" name="size" class="rdSize" value="S">S
+   <input type="radio" name="size" class="rdSize" value="M" checked>M
+   <input type="radio" name="size" class="rdSize" value="L">L
+   <input type="hidden" name="singlePrice" id="singlePrice" value="800">
+
  <div>
  <p> 合計金額: <span id="totalPrice">0</span> 円</p>
  </div>
+
  <br>
  <input type="submit" name="btnA" id="btnA" value=" 購入">
  </form>
  </div>
 </body>
+
+
+
 </html>
